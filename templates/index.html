@@ -632,7 +632,7 @@
                     formData.append('speaker_wav', speakerFile);
                 }
 
-                const response = await fetch('/generate-speech', {
+                const response = await fetch('https://ieee-deployemt-frontend.onrender.com/generate-speech', {
                     method: 'POST',
                     body: formData
                 });
